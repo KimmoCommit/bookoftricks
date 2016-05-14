@@ -18,6 +18,13 @@ prose:
   siteurl: 'http://kimmocommit.github.io/bookoftricks/'
   metadata:
     _posts:
+      - name: "layout"
+        field:
+          label: "Layout"
+          element: "select"
+          options:
+            - name: "Post"
+              value: "post"
       - name: "published"
         field:
           element: "checkbox"
