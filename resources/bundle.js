@@ -20942,7 +20942,7 @@
 	              null,
 	              _react2.default.createElement(
 	                'a',
-	                { className: 'navbar-links-link', href: '#' },
+	                { className: 'navbar-links-link', href: 'http://kimmocommit.github.io/bookoftricks/' },
 	                'Home'
 	              )
 	            ),
@@ -20960,8 +20960,8 @@
 	              null,
 	              _react2.default.createElement(
 	                'a',
-	                { className: 'navbar-links-link', href: '#' },
-	                'Repo'
+	                { className: 'navbar-links-link', href: 'http://prose.io/#KimmoCommit/bookoftricks/tree/gh-pages', target: '_blank' },
+	                'Prose'
 	              )
 	            )
 	          )
