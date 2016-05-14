@@ -54,8 +54,8 @@ export default class App extends Component {
       <NavBar />
       {this.props.posts.length > 0 ? [
         <Search key={1} search={this.filterItems.bind(this)} />,
+        <InfoBox key={3} items={this.props.posts} />,
         <List key={2} items={this.state.posts} />,
-        <InfoBox key={3} items={this.props.posts} />
         ] : null}
       </div>
     );

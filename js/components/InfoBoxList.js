@@ -8,6 +8,10 @@ export default class InfoBoxList extends Component {
     super();
   }
 
+  componentWillReceiveProps(newProps){
+
+  }
+
   sortByMonth(posts){
     const resultObj = {};
     const resultArray = [];
@@ -44,7 +48,7 @@ export default class InfoBoxList extends Component {
 
   render() {
     return (
-      <div className="infobox-list">
+      <div className={`infobox-list ${this.props.isListHidden ? 'infobox-list-hidden' : ''}`}>
       { this.sortByMonth(this.props.items) }
       </div>
     );

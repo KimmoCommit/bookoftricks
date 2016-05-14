@@ -1,6 +1,6 @@
 .infobox{
   padding: $base;
-  float: left;
+  float: right;
   width: 30%;
   padding-top: $base;
   background-color: $color2-5;
@@ -41,5 +41,59 @@
 
   &-toggle{
 
+  }
+  &-mobile{
+    &-toggle{
+      display:none;
+      height: $base;
+      float: left;
+      position:relative;
+      cursor:pointer;
+      width: $large;
+      margin-right: $small * 1.5;
+      &:before{
+        text-align: center;
+        width: 20px;
+        padding: 0 5px 0 5px;
+        background-color: $color1;
+        color: $color2;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        content: ' + ';
+      }
+      &-closed{
+        &:before{
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          content: ' - ';
+        }
+      }
+    }
+    &-list{
+      &-open{
+        height: 100%;
+      }
+    }
+    &-open{
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .infobox{
+    width: 100%;
+    .tooltip{
+      display: none;
+    }
+  }
+  .infobox-mobile-toggle{
+    display:block;
+  }
+  .infobox-list-hidden{
+    height: 0;
+    overflow: hidden;
   }
 }

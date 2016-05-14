@@ -8,8 +8,8 @@
         {{ content }}
       </div>
     </div>
-    {% if jekyll.environment == "development" %}
-    <script src="{{ "/resources/bundle.js" | prepend: site.baseurl }}"></script>
+    {% if jekyll.environment == "dev" %}
+    <script src="http://localhost:8080/assets/bundle.js"></script>
     {% else %}
     <script src="{{ "/resources/bundle.js" | prepend: site.baseurl }}"></script>
     {% endif %}
