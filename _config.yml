@@ -16,12 +16,18 @@ baseurl: "/bookoftricks" # the subpath of your site, e.g. /blog
 prose:
   rooturl: '_posts'
   siteurl: 'http://kimmocommit.github.io/bookoftricks/'
+  metadata:
+    _posts:
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Published"
+          value: true
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 github_username:  KimmoCommit
 
 # Build settings
 markdown: kramdown
-
 exclude:
   - node_modules/
   - js/
