@@ -20929,7 +20929,7 @@
 	              null,
 	              _react2.default.createElement(
 	                'a',
-	                { href: '#', className: 'brand-text navbar-links-link' },
+	                { href: 'http://kimmocommit.github.io/bookoftricks/', className: 'brand-text navbar-links-link' },
 	                'Book Of Tricks'
 	              )
 	            )
