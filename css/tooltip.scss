@@ -1,0 +1,32 @@
+.tooltip{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: -320px;
+  z-index: 9999;
+  top:50%;
+  transform: translateY(-50%);
+  background-color: $color2-5;
+  &-content{
+  font-size: $base !important;
+  code{
+    font-size: $base;
+  }
+  padding: $large;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: absolute;
+  }
+  &-arrow{
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid $color2-5;
+  top:50%;
+  transform: translateY(-50%);
+  left: 100%;
+  position: absolute;
+  }
+}

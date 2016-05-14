@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div id="app-root"></div>
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+    {% if jekyll.environment == "development" %}
+    <script src="resources/bundle.js"></script>
+    {% else %}
+    <script src="resources/bundle.js"></script>
+    {% endif %}
+  </body>
+</html>

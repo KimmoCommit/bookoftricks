@@ -1,0 +1,45 @@
+.infobox{
+  padding: $base;
+  float: left;
+  width: 30%;
+  padding-top: $base;
+  background-color: $color2-5;
+  &-title{
+    float:left;
+    width: 100%;
+    font-size: $large;
+    color: $color1;
+  }
+  &-list{
+    float: left;
+    width: 100%;
+    margin-left: 0;
+    &-title{
+    color: $color1;
+    }
+    &-item{
+      position:relative;
+      display :block;
+      list-style: none;
+      float: left;
+      width: 100%;
+      color: $color3 - 100;
+      a{
+        @extend .link--light;
+        white-space: nowrap;
+        width:100%;
+        float: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  &-footer{
+
+  }
+
+  &-toggle{
+
+  }
+}

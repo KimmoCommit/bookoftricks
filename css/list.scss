@@ -1,0 +1,48 @@
+.list{
+  margin-top: $base;
+  padding: $base;
+  float: left;
+  width: 70%;
+  &-item{
+    width: 100%;
+    float: left;
+    margin-bottom: $large;
+    &-title{
+      color: $color1;
+      font-size: $huge - 10;
+      padding: $base;
+      width: 100%;
+      float: left;
+    } 
+    &-body{
+      padding: $base;
+      width: 100%;
+      float:left;
+    }
+    &-tags{
+      padding: $base;
+      width: 100%;
+      float:left;
+    }
+    &-tag{
+      padding: $small;
+      margin: $small;
+      border-radius: $small;
+      background-color: $color2 - 80;
+      color: $color3;
+    }
+    &-details{
+      padding: $base;
+      float:left;
+      width:100%;
+    }
+    &-date{
+      float:left;
+      width:100%;
+    }
+    &-link{
+      float:left;
+      width:100%;
+    }
+  }
+}

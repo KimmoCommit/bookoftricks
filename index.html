@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="home">
+<script id="postsData" type="application/json">
+[
+{% for post in site.posts %}
+  {
+    "postTitle":"{{ post.title }}",
+    "postTags":"{{ post.tags }}",
+    "postContent":{{ post.content | jsonify }},
+    "postUrl": "{{ post.url | prepend: site.baseurl }}",
+    "postDate": "{{ post.date }}"
+  }{% if forloop.index != forloop.length %},{% endif %}
+{% endfor %}
+]
+</script>
+
+</div>
