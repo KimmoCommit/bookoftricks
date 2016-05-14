@@ -7,6 +7,5 @@ white-space: nowrap;
 overflow: hidden;
 text-overflow: ellipsis; 
 {% endhighlight %}
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<p data-height="265" data-theme-id="0" data-slug-hash="wGZXQL" data-default-tab="css,result" data-user="KimmoCommit" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/KimmoCommit/pen/wGZXQL/">overflow ellipsis with own dot color</a> by KimmoCommit (<a href="http://codepen.io/KimmoCommit">@KimmoCommit</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
