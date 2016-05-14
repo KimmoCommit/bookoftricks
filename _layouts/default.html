@@ -9,9 +9,9 @@
       </div>
     </div>
     {% if jekyll.environment == "development" %}
-    <script src="resources/bundle.js"></script>
+    <script src="{{ "/resources/bundle.js" | prepend: site.baseurl }}"></script>
     {% else %}
-    <script src="resources/bundle.js"></script>
+    <script src="{{ "/resources/bundle.js" | prepend: site.baseurl }}"></script>
     {% endif %}
   </body>
 </html>
