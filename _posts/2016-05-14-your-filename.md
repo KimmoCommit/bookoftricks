@@ -4,7 +4,7 @@ published: true
 ---
 Jekyll also offers powerful support for code snippets:
 
-{% highlight javascript %}
+{% highlight js %}
 const a = 'lol';
 const b = 'omfg';
 console.log('holahola');
