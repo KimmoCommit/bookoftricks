@@ -35,6 +35,7 @@ github_username:  KimmoCommit
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 exclude:
   - node_modules/
   - js/
