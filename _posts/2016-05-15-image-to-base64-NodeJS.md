@@ -2,7 +2,7 @@
 layout: post
 published: true
 ---
-<div class="code-to-copy">
+<div id="code-to-copy-{{post.id}}">
 {% highlight javascript %}
 var fs = require('fs');
 fs.readFile(process.argv[2], function(err, data) {
