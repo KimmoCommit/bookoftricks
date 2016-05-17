@@ -3,7 +3,25 @@ layout: post
 published: true
 ---
 <div class="code-to-copy">
-
+{% highlight javascript %}
+const answer = document.getElementById("copyResult");
+const copy   = document.getElementById("copyButton");
+const selection = window.getSelection();
+const range = document.createRange();
+const textToCopy = document.getElementById("textToCopy");
+copy.addEventListener('click', function(e) {
+    range.selectNodeContents(textToCopy);
+    selection.removeAllRanges();
+    selection.addRange(range);
+    const successful = document.execCommand('copy');
+    if(successful){
+      answer.innerHTML = 'Copied!';
+    } else {
+      answer.innerHTML = 'Unable to copy!';
+    }
+    window.getSelection().removeAllRanges()
+});
+{% endhighlight %}
 </div>
 
 Take note of the `getSelection()` support: https://developer.mozilla.org/en-US/docs/Web/API/Window/getSelection. IE < 9 does not seem to be supported atm and mobile support is relatively unknown. More details about clearing selection support: http://stackoverflow.com/questions/3169786/clear-text-selection-with-javascript.

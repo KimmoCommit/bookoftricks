@@ -1,0 +1,17 @@
+.copy-code-button{
+  color: $color1-5;
+  padding: $small;
+  position: absolute;
+  top:$base * 2;
+  right:$base * 3;
+  border: 1px solid $color1-5;
+  cursor: pointer;
+  &:hover{
+    background-color: $color1-5;
+    color: $color3;
+  }
+}
+
+.code-to-copy{
+  position: relative;
+}
