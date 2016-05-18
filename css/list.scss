@@ -15,6 +15,7 @@
       float: left;
     } 
     &-body{
+      word-break: break-word;
       padding: $base;
       width: 100%;
       float:left;

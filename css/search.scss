@@ -5,7 +5,8 @@
   background-color: rgba($color1-5,1);
   position: relative;
   &-input{
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     padding: $base;
     outline: 0;
     border: 0;

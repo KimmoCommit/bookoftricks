@@ -44,6 +44,7 @@
   }
   &-mobile{
     &-toggle{
+      user-select:none;
       display:none;
       height: $base;
       float: left;
